@@ -1,22 +1,30 @@
-# RESTfulSpringBootCucumber
+# Candidat(e): Développeur Java chez Canal Plus
 
-<b>Implemantation de cas de test</b> :
+# language: fr
+
+@adresse  @modification
+
+Fonctionnalité :  Modifier l'adresse d'un abonné
+
+Plan du scénario  : Modification de l'adresse d'un abonné résidant en France sans ou avec date d'effet
+
+Etant  donné  un  abonné  avec  une  adresse principale <active> en France
+
+Lorsque  le conseiller connecté à <canal> modifie l'adresse de l'abonné
+
+Alors l'adresse de l'abonné modifiée est enregistrée sur l'ensemble des contrats de l'abonné Et un mouvement de modification d'adresse est créé
+
+Cloner Le projet:
 <pre>
-@adresse @modification
-Fonctionnalité: Modifier l'adresse d'un abonné 
-@TestsRecevabilité
-@scenarioTest
-Plan du scénario: Modification de l'adresse d'un abonné résidant en France sans ou avec date d'effet
-Etant donné un abonné avec une adresse principale &lt;active&gt; en &lt;pays&gt;
-Lorsque le conseiller connecté à <canal> modifie l'adresse de l'abonné &lt;condition&gt;
-Alors l'adresse de l'abonné modifiée est enregistrée sur l'ensemble des contrats de l'abonné
-Et un mouvement de modification d'adresse est créé
+git clone https://github.com/javdevV/test
 </pre>
 
-<b>Languge</b> : JAVA<br>
-<b>Framework & Libs</b> : Spring & Spring Boot, Cucumber, TestNG<br>
-<b>Exécution de test</b> : <br>
+Lancer Les tests:
 <pre>
-cd RESTfulSpringBoot/
+cd test 
 mvn verify
+</pre>
+ouvrir la page du rapport dans le path suivant
+<pre>
+\target\site\serenity\index.html
 </pre>
